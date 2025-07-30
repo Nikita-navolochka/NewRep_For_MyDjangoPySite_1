@@ -5,4 +5,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(response):
-    return HttpResponse("<h1>проверка</h1>")
+    return render(response,'MySiteApp/index.html')
+def info(response):
+    return render(response,'MySiteApp/info.html')
