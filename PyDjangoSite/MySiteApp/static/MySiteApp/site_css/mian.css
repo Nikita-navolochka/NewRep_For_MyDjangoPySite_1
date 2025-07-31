@@ -1,63 +1,47 @@
-@font-face {
-  font-family: 'Mulish';
- src: url("C:/Users/adminib/Desktop/front_progect/Mulish-Bold.ttf") format('ttf');
- font-style: normal ;
- font-weight:normal;
- font-display: swap;
-}
-
-#header1{
-font-family:'Mulish', sans-serif;
-background-color: #6F727A;
-border-color: black;
-border-width:30px;
-box-sizing:border-box;
-height: 60px;
-text-align: right;
-padding-right: 55px;
-padding-top: 5px;
-color:#D9D9D9;
-border: 1px solid black;
-border-radius: 6px;
-padding-bottom: 20px;
-}
-
-.mess{
-background-color: tomato;
-border-radius: 50%;
-width: 50px;
-height: 50px;
-position: fixed;
-border: 2px solid lightblue;
-position: absolute;
-  bottom: 80px;
-  right: 60px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-position: fixed;
-
-}
-
 body{
-  padding: 0;
-  margin: 0;
-  background-color:#6D78DE;
+background-color:#2c2c2c;
 }
 
-#foot1{
-  color:#D1D4CD;
-  background-color: #444445;
-  height: 100px;
-  border-radius: 3px;
-  position: relative;
-  top: 480px;
+aside{
+float:left;
+background-color:#181818;
+width:20%;
+padding:2.5%;
+height:100vh;
+color:fff;
+border-right: 5px solid #4d4d4d;
 }
 
-.tel{
-  border-radius: 30px;
-  width: 35px;
-  height: 35px;
-  border: none;
-  padding-left: 8px;
-  box-sizing: border-box;
-  background-color: #AEB4EB;
+aside img {
+width: 80px;
+float:left;
 }
+
+aside .logo{
+font-size:40px;
+margin-left:10px;
+font-weight:bold;
+position:relative;
+top:-5px;
+}
+
+aside h3{
+margin-top:50px;
+font-size:28px;
+}
+
+aside ul{list-stile: none;}
+aside ul li{
+color:#fff;
+display:block;
+margin-top:20px;
+transition: transform .6s ease;
+}
+
+aside ul li:hover,aside ul a:hover{
+color:#ed5959
+text-decoration:none;
+transform; scale(1.05);
+}
+
+

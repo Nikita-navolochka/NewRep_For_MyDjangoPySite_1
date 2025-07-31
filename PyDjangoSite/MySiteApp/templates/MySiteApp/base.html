@@ -9,6 +9,19 @@
         <link rel="stylesheet" href="{% static 'MySiteApp/site_css/mian.css' %}">
 </head>
 <body>
+<aside>
+ <img  src="C:\Users\adminib\Desktop\coding_icon-icons.com_64696.svg" alt="картинка">
+
+ <span class="logo">Мой сайт</span>
+ <h3>Навигация</h3>
+
+ <ul>
+  <a href="{%  url 'home' %}"><li>Главная</li></a>
+  <a href="{%  url 'info' %}"><li>Информация</li></a>
+  <a href="http://127.0.0.1:8000/"><li>О нас</li></a>
+ </ul>
+
+</aside>
 {% block content %}
 {% endblock %}
 </body>
