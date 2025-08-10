@@ -8,3 +8,4 @@ def index(response):
     return render(response,'MySiteApp/index.html')
 def info(response):
     return render(response,'MySiteApp/info.html')
+

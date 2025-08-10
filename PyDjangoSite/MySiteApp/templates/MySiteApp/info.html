@@ -1,10 +1,13 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Info</title>
-</head>
-<body>
-<div><p><strong>инфо</strong></p></div>
-</body>
-</html>
+{% extends "MySiteApp/base.html" %}
+
+{% block content %}
+<main>
+ <div class="font-weight-bold"><h3>Info</h3></div>
+ <div id="red">красный цвет</div>
+
+</main>
+{% endblock %}
+
+{% block title %}
+ <title>Info</title>
+{% endblock %}
