@@ -7,20 +7,19 @@
 
 {% block content %}
 <main>
-    <div class="features">
+<div class="features">
         <h1>Форма добавления</h1>
      <h3 class="font-weight-bold">Новости</h3>
-       {{ news }}
-    </div>
-    <div>
-        <form method="post">
-            <input type="text" placeholder="название статьи" class="form-control"><br>
-            <input type="text" placeholder="анонс" class="form-control"><br>
-            <textarea class="form-control" placeholder="текст"></textarea><br>
-            <input type="date" class="form-control"><br>
-            <input type="time" class="form-control"><br>
-            <button class="btn btn-success" type="submit">Добавить запись</button>
-        </form>
-    </div>
+    {% if news %}
+        {% for el in news %}
+             <div class="alert alert-warning">
+             <h3>{{ el.title}}</h3>
+             <p>{{ el.anons }}</p>
+             </div>
+        {% endfor %}
+    {% else %}
+        <p>Нет записей</p>
+    {% endif %}
+
 </main>
 {% endblock %}
