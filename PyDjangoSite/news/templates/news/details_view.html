@@ -1,0 +1,16 @@
+{% extends "MySiteApp/base.html" %}
+
+
+{% block title %}
+ <title>{{ article.title }}</title>
+{% endblock %}
+
+{% block content %}
+<main>
+<div class="features">
+        <h1>{{ article.title }}</h1>
+        <q><i>{{ article.date }}</i></q>
+        <p>{{ article.full_text }}</p>
+</div>
+</main>
+{% endblock %}

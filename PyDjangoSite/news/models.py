@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 
 class Articles(models.Model):
-    title = models.CharField('Название', max_length=50, default='defolt')
-    anons = models.CharField('Анонс', max_length=250, default='defolt')
+    title = models.CharField('Название', max_length=50, default='')
+    anons = models.CharField('Анонс', max_length=250, default='')
     full_text = models.TextField('Статья')
     date = models.DateTimeField('Дата публикации')
 
@@ -14,5 +14,5 @@ class Articles(models.Model):
 
 
 class Meta:
-    verbose_name ='new'
+    verbose_name ='news'
     verbose_name_plural = 'news'

@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Articles
 from .forms import ArticlesForm
+from django.views.generic import DeleteView
 # Create your views here.
 
 def NewsHome(request):
@@ -8,7 +9,14 @@ def NewsHome(request):
     return render(request, 'news/news.html', {'news':news})
 
 
+class NewsDetailView(DeleteView):
+    model = Articles
+    template_name = 'news/details_view.html'
+    context_object_name = 'article'
+
+
 def CreateNews(request):
+
     error=''
     if request.method == 'POST':
         form = ArticlesForm(request.POST)
