@@ -11,6 +11,8 @@
         <h1>{{ article.title }}</h1>
         <q><i>{{ article.date }}</i></q>
         <p>{{ article.full_text }}</p>
+        <a href="{% url 'news-delete' article.id  %}" class="btn btn-danger">Удалить</a>
+        <a href="{% url 'news-update' article.id %}" class="btn btn-info">Редактировать</a>
 </div>
 </main>
 {% endblock %}
